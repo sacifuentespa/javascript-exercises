@@ -1,5 +1,5 @@
 const repeatString = function (string, num) {
-    if (num < 0 || num == NaN){
+    if (num < 0 || isNaN(num)){
         return 'ERROR'
     }
     let finalString = ""
