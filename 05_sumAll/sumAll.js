@@ -5,6 +5,8 @@ const sumAll = function (firstNumber, secondNumber) {
         return 'ERROR';
     }
 
+    /*adding by using Gauss formula for adding sucessive integers from 0 to N 
+     (N)(N+1)/2 */
     if (secondNumber > firstNumber && (firstNumber == 1 || firstNumber == 0)) {
         sum = ((secondNumber * (secondNumber + 1)) / 2);
     } else if (firstNumber > secondNumber && (secondNumber == 1 || secondNumber == 0)) {
@@ -18,6 +20,5 @@ const sumAll = function (firstNumber, secondNumber) {
 }
 
 
-console.log(sumAll(10, "90"))
 // Do not edit below this line
 module.exports = sumAll;
